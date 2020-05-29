@@ -10,16 +10,16 @@ az group create --name voting --location westus
 
 3. Spin up Kubernetes cluster
 ```console
-az aks create --resource-group voting\
-   --name myAKSCluster\
-   --node-count 1\
-   --enable-addons monitoring\
+az aks create --resource-group voting \
+   --name myAKSCluster \
+   --node-count 1 \
+   --enable-addons monitoring \
    --generate-ssh-keys
 ```
 
 4. Get cluster credentials
 ```console
-az aks get-credentials --resource-group voting\
+az aks get-credentials --resource-group voting \
    --name myAKSCluster
 ```
 
