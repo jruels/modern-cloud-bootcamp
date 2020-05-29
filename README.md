@@ -16,7 +16,7 @@ Instructor will provide lab VM sheet.
 ## Labs   
 
 ### Day 1   
-Lab 1: [Deploy monolithic application](labs/monolithic/)  
+Lab 1: [Deploy monolithic application](labs/monolith/)  
 Lab 2: [GraphQL messaging](labs/graphql/)  
 Lab 3: [Build Docker image (Manually)](labs/docker-commit/)  
 Lab 4: [Build Docker image (Dockerfile)](labs/docker-dockerfile/)  
