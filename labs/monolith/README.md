@@ -12,11 +12,11 @@ Application that demonstrates a monolithic application being deployed.
 
 **Step 2**: Load this source code into Katacoda
 
-`git clone https://github.com/reselbob/fortune-cookies.git`
+`git clone https://github.com/jruels/modern-cloud-bootcamp`
 
 **Step 3**: Navigate to the monolithic version of the application
 
-`cd fortune-cookies/monolith`
+`cd modern-cloud-bootcamp/labs/monolith`
 
 **Step 4**: Run the application as a Docker container, first `build` the container image.
 
