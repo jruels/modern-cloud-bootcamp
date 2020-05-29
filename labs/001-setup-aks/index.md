@@ -14,7 +14,8 @@ az aks create --resource-group voting \
    --name myAKSCluster \
    --node-count 1 \
    --enable-addons monitoring \
-   --generate-ssh-keys
+   --generate-ssh-keys \
+   --node-vm-size Standard_D2s_v3
 ```
 
 4. Get cluster credentials
