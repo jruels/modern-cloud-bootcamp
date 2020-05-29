@@ -4,28 +4,27 @@ In this section, you will be using Cloud Shell to create a Kubernetes cluster.
 1. Click the shell icon on the top right of the browser.
 2. In the new console create a new Resource Group
 
-```azurecli
+```console
 az group create --name voting --location westus
 ```
 
 3. Spin up Kubernetes cluster
-```azurecli
+```console
 az aks create --resource-group voting\
    --name myAKSCluster\
    --node-count 1\
    --enable-addons monitoring\
    --generate-ssh-keys
-   
 ```
 
 4. Get cluster credentials
-```azurecli
+```console
 az aks get-credentials --resource-group voting\
    --name myAKSCluster
 ```
 
 Confirm the cluster is running:
-```azurecli
+```console
 kubectl get pods --all-namespaces
 ```
 
