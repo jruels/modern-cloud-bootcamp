@@ -20,17 +20,17 @@ Lab 1: [Deploy monolithic application](labs/monolithic/)
 Lab 2: [GraphQL messaging](labs/graphql/)  
 Lab 3: [Build Docker image (Manually)](labs/docker-commit/)  
 Lab 4: [Build Docker image (Dockerfile)](labs/docker-dockerfile/)  
-[Create AKS cluster](labs/001-aks/)  
-Lab 5: [Kubernetes Pods](labs/pods/)  
-Lab 6: [Kubernetes Deployments](labs/deployments/)  
+Lab 5: [Create AKS cluster](labs/001-setup-aks/)  
+Lab 6: [Kubernetes Pods](labs/pods/)  
+Lab 7: [Kubernetes Deployments](labs/deployments/)  
 
 ### Day 2
-Lab 7: [Deploy microservices (synchronous)](labs/fortune-sync/)  
-Lab 8: [Deploy microservices (asynchronous)](labs/fortune-async/)  
-Lab 9: [Deploy RESTful API](labs/restapi/)  
-Lab 10: [Dealing with State](labs/volume-state/)  
+Lab 8: [Deploy microservices (synchronous)](labs/fortune-sync/)  
+Lab 9: [Deploy microservices (asynchronous)](labs/fortune-async/)  
+Lab 10: [Deploy RESTful API](labs/restapi/)  
+Lab 11: [Dealing with State](labs/volume-state/)  
 
 
 ### Day 3
-Lab 11: [Jenkins](labs/jenkins/)  
-Lab 12: [CICD Pipeline](labs/cicd-aks)   
+Lab 12: [Jenkins](labs/jenkins/)  
+Lab 13: [CICD Pipeline](labs/cicd-aks)   
