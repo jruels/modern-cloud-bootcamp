@@ -9,47 +9,62 @@ In this lab we will configure a Kubernetes Pod hosting a mysql database from the
 4. Run a command to exec directly into the mysql-client from the command-line
 
 ### Deploy a Pod from the command-line 
-1. Show the nodes of the cluster 
+Go to the Kubernetes Playground on Katacoda
+
+`https://www.katacoda.com/courses/kubernetes/playground`
+
+(You might have to login or create an account)
+
+Start Kubernetes cluster by clicking "launch.sh" on left hand side. 
+
+Load this source code into Katacoda
+
+`git clone https://github.com/jruels/modern-cloud-bootcamp`
+
+1. Enter lab directory   
+`cd modern-cloud-bootcamp/labs/pods'
+
+2. Show the nodes of the cluster 
 ```
 kubectl get nodes 
 ```
 
-2. Show information about the cluster
+3. Show information about the cluster
 ```
 kubectl cluster-info
 ```
 
-3. Dump information about the cluster
+4. Dump information about the cluster
 ```
 kubectl cluster-info dump
 ```
 
-4. Show all Pods in the `kube-system` namespace 
+5. Show all Pods in the `kube-system` namespace 
 ```
 kubectl get pods -n kube-system
 ```
 
-5. Deploy `nginx` Pod
+6. Deploy `nginx` Pod
 ```
 kubectl run nginx-pod-lab --image=nginx:alpine --port=80
 ```
 
-6. Confirm Pod is running'
+7. Confirm Pod is running'
 ```
 kubectl get pods 
 ```
 
-7. Get information about Pod in `json` format 
+8. Get information about Pod in `json` format 
 ```
 kubectl get pod nginx-pod-lab-<name> -o json 
 ``` 
 
-8. Now get info about it in `YAML` syntax
+9. Now get info about it in `YAML` syntax
 ```
 kubectl get pod nginx-pod-lab-<name> -o yml
 ```
 
-9. Delete everything! 
+10. Delete everything! 
 ```
 kubectl delete all --all
 ```
