@@ -28,7 +28,8 @@ Lab 7: [Deploy microservices (synchronous)](labs/microservice-sync/)
 Lab 8: [Deploy microservices (asynchronous)](labs/microservice-async/)  
 Lab 9: [Deploy RESTful API](labs/restapi/)  
 Lab 10: [Create Azure Kubernetes cluster](001-setup-aks/)  
-Lab 11: [Dealing with State](labs/volume-state/)  
+Lab 11: [Microservices State (disk)](labs/azure-pd/)  
+Lab 12: [Microservices State (files)](labs/azure-pf/)  
 
 
 ### Day 3
