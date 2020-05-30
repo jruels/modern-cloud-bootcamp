@@ -30,7 +30,7 @@ Let's start by creating the virtual environment for our Flask application.
 
 ```bash
 mkdir rest-api
-apt-get install python3-venv
+apt-get update && apt-get install -y python3-venv
 python3 -m venv rest-api
 ```
 
