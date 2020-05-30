@@ -142,16 +142,16 @@ This volume name forms the underlying Azure disk name. Query for the disk ID wit
 ```azurecli-interactive
 $ az disk list --query '[].id | [?contains(@,`pvc-faf0f176-8b8d-11e8-923b-deb28c58d242`)]' -o tsv
 
-/subscriptions/<guid>/resourceGroups/MC_MYRESOURCEGROUP_MYAKSCLUSTER_EASTUS/providers/MicrosoftCompute/disks/kubernetes-dynamic-pvc-faf0f176-8b8d-11e8-923b-deb28c58d242
+/subscriptions/0703cb92-035c-40d1-b840-0c9f6da480e9/resourceGroups/MC_VOTING_MYAKSCLUSTER_WESTUS/providers/Microsoft.Compute/disks/kubernetes-dynamic-pvc-61ae1cfd-7303-4840-abb3-e332aad29df9
 ```
 
-Use the disk ID to create a snapshot disk with az snapshot create. The following example creates a snapshot named *pvcSnapshot* in the same resource group as the AKS cluster (*MC_myResourceGroup_myAKSCluster_eastus*). You may encounter permission issues if you create snapshots and restore disks in resource groups that the AKS cluster does not have access to.
+Use the disk ID to create a snapshot disk with az snapshot create. The following example creates a snapshot named *pvcSnapshot* in the same resource group as the AKS cluster (*MC_voting_myAKSCluster_westus*). You may encounter permission issues if you create snapshots and restore disks in resource groups that the AKS cluster does not have access to.
 
 ```azurecli-interactive
 $ az snapshot create \
-    --resource-group MC_myResourceGroup_myAKSCluster_eastus \
+    --resource-group MC_voting_myAKSCluster_westus \
     --name pvcSnapshot \
-    --source /subscriptions/<guid>/resourceGroups/MC_myResourceGroup_myAKSCluster_eastus/providers/MicrosoftCompute/disks/kubernetes-dynamic-pvc-faf0f176-8b8d-11e8-923b-deb28c58d242
+    --source /subscriptions/<guid>/resourceGroups/MC_VOTING_MYAKSCLUSTER_WESTUS/providers/Microsoft.Compute/disks/kubernetes-dynamic-pvc-61ae1cfd-7303-4840-abb3-e332aad29df9
 ```
 
 Depending on the amount of data on your disk, it may take a few minutes to create the snapshot.
@@ -161,13 +161,13 @@ Depending on the amount of data on your disk, it may take a few minutes to creat
 To restore the disk and use it with a Kubernetes pod, use the snapshot as a source when you create a disk with az disk create. This operation preserves the original resource if you then need to access the original data snapshot. The following example creates a disk named *pvcRestored* from the snapshot named *pvcSnapshot*:
 
 ```azurecli-interactive
-az disk create --resource-group MC_myResourceGroup_myAKSCluster_eastus --name pvcRestored --source pvcSnapshot
+az disk create --resource-group MC_voting_myAKSCluster_westus --name pvcRestored --source pvcSnapshot
 ```
 
 To use the restored disk with a pod, specify the ID of the disk in the manifest. Get the disk ID with the az disk show command. The following example gets the disk ID for *pvcRestored* created in the previous step:
 
 ```azurecli-interactive
-az disk show --resource-group MC_myResourceGroup_myAKSCluster_eastus --name pvcRestored --query id -o tsv
+az disk show --resource-group MC_voting_myAKSCluster_westus --name pvcRestored --query id -o tsv
 ```
 
 Create a pod manifest named `azure-restored.yaml` and specify the disk URI obtained in the previous step. The following example creates a basic NGINX web server, with the restored disk mounted as a volume at */mnt/azure*:
@@ -196,7 +196,7 @@ spec:
       azureDisk:
         kind: Managed
         diskName: pvcRestored
-        diskURI: /subscriptions/<guid>/resourceGroups/MC_myResourceGroupAKS_myAKSCluster_eastus/providers/Microsoft.Compute/disks/pvcRestored
+        diskURI: /subscriptions/<guid>/resourceGroups/MC_voting_myAKSCluster_westus/providers/Microsoft.Compute/disks/pvcRestored
 ```
 
 Create the pod with the kubectl apply command, as shown in the following example:
@@ -217,7 +217,7 @@ Volumes:
   volume:
     Type:         AzureDisk (an Azure Data Disk mount on the host and bind mount to the pod)
     DiskName:     pvcRestored
-    DiskURI:      /subscriptions/19da35d3-9a1a-4f3b-9b9c-3c56ef409565/resourceGroups/MC_myResourceGroupAKS_myAKSCluster_eastus/providers/Microsoft.Compute/disks/pvcRestored
+    DiskURI:      /subscriptions/19da35d3-9a1a-4f3b-9b9c-3c56ef409565/resourceGroups/MC_voting_myAKSCluster_westus/providers/Microsoft.Compute/disks/pvcRestored
     Kind:         Managed
     FSType:       ext4
     CachingMode:  ReadWrite
