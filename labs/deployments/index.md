@@ -1,4 +1,15 @@
 # Deploy multi-tier application
+
+Go to the Kubernetes Playground on Katacoda
+
+`https://www.katacoda.com/scenario-examples/courses/environment-usages/minikube`
+
+(You might have to login or create an account)
+
+Load this source code into Katacoda
+
+`git clone https://github.com/jruels/modern-cloud-bootcamp`
+
 This lab shows you how to build, deploy and manage a simple, multi-tier web application using Kubernetes. 
 
 We will be deploying the guestbook demo application which is made up of Redis master, Redis slave, and guestbook frontend.  After successfully deploying we will update the application and then rollback to the previous version.
@@ -139,19 +150,31 @@ kubectl get services
 
 You should see something like this 
 ```
-NAME           TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
-frontend       NodePort    10.107.73.47   <none>        80:31495/TCP   34s
-kubernetes     ClusterIP   10.96.0.1      <none>        443/TCP        44m
-redis-master   ClusterIP   10.107.62.78   <none>        6379/TCP       11m
-redis-slave    ClusterIP   10.98.54.128   <none>        6379/TCP       6m
+NAME           TYPE         CLUSTER-IP     EXTERNAL-IP      PORT(S)        AGE
+frontend       NodePort     10.107.73.47   <pending>   80:31495/TCP        34s
+kubernetes     ClusterIP    10.96.0.1      <none>           443/TCP        44m
+redis-master   ClusterIP    10.107.62.78   <none>           6379/TCP       11m
+redis-slave    ClusterIP    10.98.54.128   <none>           6379/TCP       6m
 ```
 
 ### Viewing the Frontend Service 
-To load the front end in a browser visit your Master servers IP and use the port from previous command. 
+To load the front end in a browser we need to get the service URL
+```
+minikube service frontend --url
+```
 
-In the example above we can see that `frontend` Service is running on `NodePort` 31495 so I would visit the following in a web browser 
+Minikube will return something like: 
+```
+http://172.17.0.20:32109
+```
 
-`http://<masterIP>:31495`
+The important part is the `NodePort`, in this case `32109`   
+
+To access the frontend we need to click the `+` at the top of the Katacoda page, click "Select port to view on Host1" and type in the `NodePort` from above. 
+
+This will load a new page with the guestbook application. 
+
+`http://<EXTERNAL-IP>`
 
 ## Scale Web Frontend 
 Scaling up or down is easy because your servers are defined as a Service that uses a Deployment controller.
