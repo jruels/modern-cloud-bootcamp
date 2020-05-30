@@ -160,4 +160,7 @@ parameters:
   skuName: Standard_LRS
 ```
 
+## Bonus: mount Azure Files share to another pod.
+Create a new pod mounting the same volume.
+
 ## Lab Complete
