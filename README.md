@@ -26,7 +26,7 @@ Lab 7: [Kubernetes Deployments](labs/deployments/)
 
 ### Day 2
 Lab 8: [Deploy microservices (synchronous)](labs/microservice-sync/)  
-Lab 9: [Deploy microservices (asynchronous)](labs/fortune-async/)  
+Lab 9: [Deploy microservices (asynchronous)](labs/microservice-async/)  
 Lab 10: [Deploy RESTful API](labs/restapi/)  
 Lab 11: [Dealing with State](labs/volume-state/)  
 
