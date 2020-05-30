@@ -20,15 +20,14 @@ Lab 1: [Deploy monolithic application](labs/wisesayings/)
 Lab 2: [GraphQL messaging](https://katacoda.com/programmableweb/scenarios/understanding-graphql-using-imbob)  
 Lab 3: [Build Docker image (Manually)](labs/docker-commit/)  
 Lab 4: [Build Docker image (Dockerfile)](labs/monolith/)  
-[//]: # Lab 5: [Create AKS cluster](labs/001-setup-aks/)  
-Lab 6: [Kubernetes Pods](labs/pods/)  
-Lab 7: [Kubernetes Deployments](labs/deployments/)  
+Lab 5: [Kubernetes Pods](labs/pods/)  
+Lab 6: [Kubernetes Deployments](labs/deployments/)  
 
 ### Day 2
-Lab 8: [Deploy microservices (synchronous)](labs/microservice-sync/)  
-Lab 9: [Deploy microservices (asynchronous)](labs/microservice-async/)  
-Lab 10: [Deploy RESTful API](labs/restapi/)  
-Lab 11: [Dealing with State](labs/volume-state/)  
+Lab 7: [Deploy microservices (synchronous)](labs/microservice-sync/)  
+Lab 8: [Deploy microservices (asynchronous)](labs/microservice-async/)  
+Lab 9: [Deploy RESTful API](labs/restapi/)  
+Lab 10: [Dealing with State](labs/volume-state/)  
 
 
 ### Day 3
