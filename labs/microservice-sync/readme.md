@@ -25,7 +25,7 @@ internal to Kubernetes. Hence, the application is faciliating internal "fortune 
 
 `cd modern-cloud-bootcamp/labs/microservice-sync/`
 
-**Step 4**: Run the shell script the creates a local Docker registry and seed the registry
+**Step 4**: Run the shell script that creates a local Docker registry and seed the registry
 with the containers representing each microservice 
 
 `sh docker-seed.sh`
