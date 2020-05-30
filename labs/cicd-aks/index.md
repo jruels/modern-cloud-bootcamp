@@ -144,7 +144,7 @@ This sample script is for demo purposes to quickly provision a Jenkins environme
 Run the following commands to download and run the script. 
 
 ```console
-curl https://gist.githubusercontent.com/jruels/dd44923beb9e4111eb13ad4cd204b1d2/raw/5a59ba613a6c89c0b8471f5b570216c5650add33/azure-jenkins-vm.sh > azure-jenkins.sh
+curl https://gist.githubusercontent.com/jruels/dd44923beb9e4111eb13ad4cd204b1d2/raw/2bb83570d4f26573d753d0d5d625acab25826ff8/azure-jenkins-vm.sh > azure-jenkins.sh
 sh azure-jenkins.sh
 ```
 
