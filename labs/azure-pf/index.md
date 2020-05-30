@@ -89,10 +89,10 @@ Create a file named `azure-pvc-files.yaml`, and copy in the following YAML. Make
 kind: Pod
 apiVersion: v1
 metadata:
-  name: mypod
+  name: myfilespod
 spec:
   containers:
-  - name: mypod
+  - name: myfilespod
     image: nginx:1.15.5
     resources:
       requests:
