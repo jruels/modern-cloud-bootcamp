@@ -49,7 +49,6 @@ pip install flask
 Let's create our application files:
 
 ```bash
-mkdir project
 wget -O .gitignore "https://github.com/github/gitignore/blob/master/Python.gitignore" 2> templog
 touch __init__.py
 mkdir app
