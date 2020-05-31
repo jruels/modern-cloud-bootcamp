@@ -1,9 +1,9 @@
 # Deploy from GitHub to Azure Kubernetes Service using Jenkins
 
-This tutorial deploys a sample application from both GitHub and Bitbucket to an 
+This tutorial deploys a sample application from both GitHub to an 
 Azure Kubernetes Service (AKS) cluster by setting up continuous integration (CI) and 
 continuous deployment (CD) in Jenkins. That way, when you 
-update your app by pushing commits to GitHub/Bitbucket, Jenkins 
+update your app by pushing commits to GitHub, Jenkins 
 automatically runs a new container build, pushes container 
 images to Azure Container Registry (ACR), and then runs your app in AKS. 
 
@@ -12,7 +12,7 @@ In this tutorial, you'll complete these tasks:
   * Deploy a sample Azure vote app to an AKS cluster.
   * Create a basic Jenkins project.
   * Set up credentials for Jenkins to interact with ACR.
-  * Create a Jenkins build job and GitHub/Bitbucket webhook for automated builds.
+  * Create a Jenkins build job and GitHub webhook for automated builds.
   * Test the CI/CD pipeline to update an application in AKS based on GitHub code commits.
 
 ## Prepare your app
@@ -313,4 +313,5 @@ Once the build is complete, refresh your web browser of the sample Azure vote ap
 
 ![Sample Azure vote in AKS updated by the Jenkins build job](https://docs.microsoft.com/en-us/azure/developer/jenkins/media/deploy-from-github-to-aks/azure-vote-updated.png)
 
-## Integrate Bitbucket with Jenkins
+
+## Lab Complete
