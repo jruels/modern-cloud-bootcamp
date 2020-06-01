@@ -55,7 +55,7 @@ Clone code from the GitHub repository:
 
 In directory:
 
-`cd modern-cloud-bootcamp/wisesayings/app`
+`cd modern-cloud-bootcamp/labs/wisesayings/app`
 
 We'll Use the Docker [`build`](https://docs.docker.com/engine/reference/commandline/build/) command to create a container image for the Wise Sayings
 source code
