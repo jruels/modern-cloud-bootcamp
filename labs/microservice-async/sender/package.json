@@ -1,0 +1,19 @@
+{
+  "name": "sender",
+  "version": "1.0.0",
+  "description": "Handles all asynchronous activity beteen a message queue an constituents",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "reselbob@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "resel-redis-broker": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "faker": "^4.1.0",
+    "mocha": "^6.2.0"
+  }
+}
