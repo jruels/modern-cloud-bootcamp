@@ -10,6 +10,11 @@ Load this source code into Katacoda
 
 `git clone https://github.com/jruels/modern-cloud-bootcamp`
 
+Enter the lab directory: 
+```
+cd modern-cloud-bootcamp/labs/deployments
+```
+
 This lab shows you how to build, deploy and manage a simple, multi-tier web application using Kubernetes. 
 
 We will be deploying the guestbook demo application which is made up of Redis master, Redis slave, and guestbook frontend.  After successfully deploying we will update the application and then rollback to the previous version.
