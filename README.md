@@ -2,18 +2,11 @@
 
 This site includes the slides and labs for the Modern Application Bootcamp class.
 
+## Course Content
+[Slides day 1](https://www.dropbox.com/s/5vmv4d0nxx8kzcd/Cloud%20Bootcamp-Day1.pdf?dl=0)
+[Slides day ](https://www.dropbox.com/s/b18zu9wtu4tzkfm/Cloud%20Bootcamp-Day2.pdf?dl=0)
 
-## lab VMs  
-[//]: # (https://docs.google.com/spreadsheets/d/1psMAAPxgHq9wpZVftao9UT8MIWR1xljq-WB8aOiVBRI/edit?usp=sharing)  
-Instructor will provide lab VM sheet.
-
-[Lab Setup](labs/001-setup/)  
-
-## Course Content   
-[//]: # (https://drive.google.com/file/d/1V63Vpq_WlhV7G46KQmejswdbXLjgbKdV/view?usp=sharing)  
-[Slides](https://bit.ly/adv-k8s-content)
-
-## Labs   
+## Labs
 
 ### Day 1   
 Lab 1: [Deploy monolithic application](labs/wisesayings/)  
