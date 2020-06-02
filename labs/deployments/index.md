@@ -174,8 +174,6 @@ To access the frontend we need to click the `+` at the top of the Katacoda page,
 
 This will load a new page with the guestbook application. 
 
-`http://<EXTERNAL-IP>`
-
 ## Scale Web Frontend 
 Scaling up or down is easy because your servers are defined as a Service that uses a Deployment controller.
 
