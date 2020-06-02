@@ -145,7 +145,7 @@ $ az disk list --query '[].id | [?contains(@,`pvc-faf0f176-8b8d-11e8-923b-deb28c
 /subscriptions/0703cb92-035c-40d1-b840-0c9f6da480e9/resourceGroups/MC_VOTING_MYAKSCLUSTER_WESTUS/providers/Microsoft.Compute/disks/kubernetes-dynamic-pvc-61ae1cfd-7303-4840-abb3-e332aad29df9
 ```
 
-Use the disk ID to create a snapshot disk with az snapshot create. The following example creates a snapshot named *pvcSnapshot* in the same resource group as the AKS cluster (*MC_voting_myAKSCluster_westus*). You may encounter permission issues if you create snapshots and restore disks in resource groups that the AKS cluster does not have access to.
+Use the disk ID to create a snapshot disk with az snapshot create. Remember to replace the value for `--source` with the output from your previous command. The following example creates a snapshot named *pvcSnapshot* in the same resource group as the AKS cluster (*MC_voting_myAKSCluster_westus*). You may encounter permission issues if you create snapshots and restore disks in resource groups that the AKS cluster does not have access to.
 
 ```azurecli-interactive
 $ az snapshot create \
