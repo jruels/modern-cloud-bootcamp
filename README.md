@@ -3,8 +3,8 @@
 This site includes the slides and labs for the Modern Application Bootcamp class.
 
 ## Course Content
-[Slides day 1](https://www.dropbox.com/s/5vmv4d0nxx8kzcd/Cloud%20Bootcamp-Day1.pdf?dl=0)
-[Slides day ](https://www.dropbox.com/s/b18zu9wtu4tzkfm/Cloud%20Bootcamp-Day2.pdf?dl=0)
+[Slides day 1](https://www.dropbox.com/s/5vmv4d0nxx8kzcd/Cloud%20Bootcamp-Day1.pdf?dl=0)   
+[Slides day 2](https://www.dropbox.com/s/b18zu9wtu4tzkfm/Cloud%20Bootcamp-Day2.pdf?dl=0)
 
 ## Labs
 
