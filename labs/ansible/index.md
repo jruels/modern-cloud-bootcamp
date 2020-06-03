@@ -103,24 +103,24 @@ ansible-playbook -i myhosts site.yml
 
 What happened here?
 
-`---` denotes the beginning of a YAML file
-`hosts`: host tells Ansible to run the tasks on the host host
-`become: true` makes all your tasks run as sudo
-`- name:` is basically a comment, describing what the task does
-`yum` :` specifies the module we want to use
-`name:` is an argument to the yum module, that specifies the name of the package to install.
-To see all arguments for a specific module, allowed values, and other details, you can use the CLI documentation that is included with Ansible:
+`---` denotes the beginning of a YAML file   
+`hosts`: host tells Ansible to run the tasks on the host host   
+`become: true` makes all your tasks run as sudo   
+`- name:` is basically a comment, describing what the task does   
+`yum` :` specifies the module we want to use   
+`name:` is an argument to the yum module, that specifies the name of the package to install.   
+To see all arguments for a specific module, allowed values, and other details, you can use the CLI documentation that is included with Ansible:   
 
 ```
 ansible-doc yum 
 ```
 
-To close the documentation, enter q in the terminal.
+To close the documentation, enter q in the terminal.   
 
 #### Ansible is declarative   
-A fundamental principle of Ansible is that it ensures a desired state.
+A fundamental principle of Ansible is that it ensures a desired state.   
 
-From the previous example:
+From the previous example:   
 
 ```
 - name: ensure latest sysstat is installed
@@ -131,7 +131,7 @@ From the previous example:
 
 This tells Ansible to check if the latest version of sysstat is installed. If it is, Ansible will do nothing more, since the "latest" state is already achieved. If sysstat is not already there, or of an older version than what is available, Ansible installs the latest version.
 
-If you run the playbook again, Ansible does the former, and instead of "Changed: 1", you will get "OK: 2, Changed 0". Try it out:
+If you run the playbook again, Ansible does the former, and instead of "Changed: 1", you will get "OK: 2, Changed 0". Try it out:   
 
 ```
 ansible-playbook -i myhosts site.yml
@@ -139,7 +139,7 @@ ansible-playbook -i myhosts site.yml
 
 #### Ensure a package is not present 
 
-The `yum` module allows you to specify the state you wish the package to be in. If you want a specific version, you append it to the package name, for example:
+The `yum` module allows you to specify the state you wish the package to be in. If you want a specific version, you append it to the package name, for example:   
 
 ```
 - name: ensure sysstat is installed at version 10.2.0-1
