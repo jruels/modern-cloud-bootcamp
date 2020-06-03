@@ -2,11 +2,13 @@
 
 This site includes the slides and labs for the Modern Application Bootcamp class.
 
-## Course Content
-[Slides day 1](https://www.dropbox.com/s/5vmv4d0nxx8kzcd/Cloud%20Bootcamp-Day1.pdf?dl=0)   
-[Slides day 2](https://www.dropbox.com/s/b18zu9wtu4tzkfm/Cloud%20Bootcamp-Day2.pdf?dl=0)
 
-## Labs
+## Course Content   
+[Slides day 1](https://www.dropbox.com/s/5vmv4d0nxx8kzcd/Cloud%20Bootcamp-Day1.pdf?dl=0)
+[Slides day 2](https://www.dropbox.com/s/b18zu9wtu4tzkfm/Cloud%20Bootcamp-Day2.pdf?dl=0)
+[Slides day 3](https://www.dropbox.com/s/pcfbw5zc8n3cc1p/Cloud%20Bootcamp-Day3.pdf?dl=0)
+
+## Labs   
 
 ### Day 1   
 Lab 1: [Deploy monolithic application](labs/wisesayings/)  
@@ -24,3 +26,9 @@ Lab 10: [Create Azure Kubernetes cluster](labs/001-setup-aks/)
 Lab 11: [Microservices State (disk)](labs/azure-pd/)  
 Lab 12: [Microservices State (files)](labs/azure-pf/)  
 
+
+### Day 3
+Lab 13: [Git](https://www.katacoda.com/courses/git)  
+Lab 14: [Ansible](labs/ansible/)  
+Lab 15: [Jenkins](labs/jenkins/)  
+Lab 16: [CICD Pipeline](labs/cicd-aks)   
