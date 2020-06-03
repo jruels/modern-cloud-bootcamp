@@ -62,7 +62,7 @@ ansible group1 -i myhosts -m command -a date
 
 `myhosts` = name of the inventory file listing all available hosts
 
-`command` = module to use the [command module] (https://docs.ansible.com/ansible/command_module.html)returns the result of a bash command)
+`command` = module to use. The [command module](https://docs.ansible.com/ansible/command_module.html)returns the result of a bash command)
 
 `date` = argument for the module, in this case a standard shell command `date`.
 
