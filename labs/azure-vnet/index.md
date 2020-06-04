@@ -9,11 +9,12 @@ Virtual Machines are created inside of these Virtual Networks and
 require them to communicate with other VMs and resources.
 
 We will create the following resources in the following Network labs:
-1. Virtual Network: VNET
+1. Virtual Network: VNET1
 2. Subnets: Web-Subnet1 and DB-Subnet
-3. Network Security Group NSG
-4. Assign it to DB-Subnet
-5. Allow MySQL through Security Group NSG
+3. Network Security Group NSG1
+  4. Assign it to DB-Subnet1
+  5. Allow MySQL through Security Group NSG
+5. Availability set AS1
 
 
 > NOTE: `DB-Subnet1` is for demonstration only. No database VM will be installed.  
@@ -27,17 +28,17 @@ We will create the following resources in the following Network labs:
 3. Enter the following information
 
 ```
-Name: VNET
-Address space: 192.168.0.0/
-Resource group: CR
+Name: VNET1
+Address space: 192.168.0.0/16
+Resource group: CR1
 Location: West US
 ``````
 
 Web Subnet:
 ```
-Name: Web-Subnet
+Name: Web-Subnet1
 
-Address range: 192.168.1.0/
+Address range: 192.168.1.0/24
 ```
 
 4. Now click Create and wait until the deployment is complete.
@@ -52,8 +53,8 @@ Address range: 192.168.1.0/
 4. Enter the following information:
 
 ```
-Name: DB-Subnet
-Address range: 192.168.2.0/
+Name: DB-Subnet1
+Address range: 192.168.2.0/24
 ```
 
 3. Click “OK” and wait for the subnet to deploy successfully.
@@ -71,8 +72,8 @@ If a service requires access on a specific port this must be allowed through the
 2. Fill in with the following:
 
 ```
-Name: NSG
-Resource group: CR
+Name: NSG1
+Resource group: CR1
 Location: West US
 ```
 
@@ -128,8 +129,8 @@ downtime to machines in the set.
 3. Click “Availability Set”, click “Create” and and fill in with below information:
 
 ```
-Name: AS
-Resource group: CR
+Name: AS1
+Resource group: CR1
 Location: West US
 ```
 
