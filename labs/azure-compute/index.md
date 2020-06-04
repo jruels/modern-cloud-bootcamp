@@ -18,10 +18,10 @@ We will be creating the following resources:
 
 
 ```
-Name: SQL
+Name: SQL1
 Username: admin
 Password: Password
-Resource group: CR
+Resource group: CR1
 Location: West US
 ```
 
@@ -33,8 +33,8 @@ Click "OK"
 
 
 ```
-Virtual network: VNET
-Subnet: Web-Subnet
+Virtual network: VNET1
+Subnet: Web-Subnet1
 Public IP address: (new) VM1-ip
 Select public inbound ports: No public inbound ports
 ```
@@ -48,13 +48,21 @@ Deployment will take around 15 minutes, while waiting continue onto Lab 8.
 
 ## Lab 8: Create an Availability Set
 
+### Availability Sets
+Azure offers “Availability Sets” (AS) which are used to provide redundancy to your
+environments virtual machines. By creating an AS and adding VMs to it Azure will ensure
+VMs in the set are distributed across different physical hosts. These hosts are cabled up to
+different switches in redundant racks in a way where any hardware failures will not cause
+downtime to machines in the set.
+
+
 1. Log into the Azure Dashboard
 2. Click + Create a resource > In the search box type “Availability Set” and press enter.
 3. Click “Availability Set”, click “Create” and and fill in with below information:
 
 ```
-Name: AS
-Resource group: CR
+Name: AS1
+Resource group: CR1
 Location: West US
 ```
 
@@ -75,7 +83,7 @@ Click "Create".
 1. In the Azure dashboard Click Web1 VM, under “Settings” click “Networking, and confirm HTTP and HTTPS are allowed from any source. If not follow below steps.
 
 
-2. On right side of screen click “Add inbound port rule”, choose HTTP for the service and click “OK”
+  2. On right side of screen click “Add inbound port rule”, choose HTTP for the service and click “OK”
 
 
 
