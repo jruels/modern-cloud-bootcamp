@@ -137,4 +137,3 @@ Location: West US
 VMs on different physical hosts.   
 
 Click "Create".
-```
