@@ -14,7 +14,6 @@ We will create the following resources in the following Network labs:
 3. Network Security Group NSG1
   4. Assign it to DB-Subnet1
   5. Allow MySQL through Security Group NSG
-5. Availability set AS1
 
 
 > NOTE: `DB-Subnet1` is for demonstration only. No database VM will be installed.  
@@ -114,27 +113,3 @@ Name: MySQL
 and provide two levels of security. They can be customized with different options at each
 of these layers and provide fine grained security to protect Azure resources.
 
-
-### Availability Sets   
-Azure offers “Availability Sets” (AS) which are used to provide redundancy to your
-environments virtual machines. By creating an AS and adding VMs to it Azure will ensure
-VMs in the set are distributed across different physical hosts. These hosts are cabled up to
-different switches in redundant racks in a way where any hardware failures will not cause
-downtime to machines in the set.
-
-## Lab 6: Create an Availability Set
-
-1. Log into the Azure Dashboard
-2. Click + Create a resource > In the search box type “Availability Set” and press enter.
-3. Click “Availability Set”, click “Create” and and fill in with below information:
-
-```
-Name: AS1
-Resource group: CR1
-Location: West US
-```
-
-> NOTE: “Fault domains” places the VMs in different racks and “Update domains” places
-VMs on different physical hosts.   
-
-Click "Create".
