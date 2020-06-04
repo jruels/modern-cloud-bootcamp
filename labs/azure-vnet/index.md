@@ -107,18 +107,19 @@ Protocol: TCP
 Action: Allow
 Priority: 100
 Name: MySQL
-``````
-NOTE: Network Security Groups are found at both the subnet and virtual machine level
+```
+
+> NOTE: Network Security Groups are found at both the subnet and virtual machine level
 and provide two levels of security. They can be customized with different options at each
 of these layers and provide fine grained security to protect Azure resources.
-``````
-Availability Sets
+
+
+### Availability Sets   
 Azure offers “Availability Sets” (AS) which are used to provide redundancy to your
 environments virtual machines. By creating an AS and adding VMs to it Azure will ensure
 VMs in the set are distributed across different physical hosts. These hosts are cabled up to
 different switches in redundant racks in a way where any hardware failures will not cause
 downtime to machines in the set.
-```
 
 ## Lab 6: Create an Availability Set
 
@@ -130,9 +131,10 @@ downtime to machines in the set.
 Name: AS
 Resource group: CR
 Location: West US
-``````
-NOTE: “Fault domains” places the VMs in different racks and “Update domains” places
-VMs on different physical hosts.
-``````
+```
+
+> NOTE: “Fault domains” places the VMs in different racks and “Update domains” places
+VMs on different physical hosts.   
+
 Click "Create".
 ```
