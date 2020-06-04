@@ -25,7 +25,7 @@ Start by cloning the class repo:
 git clone https://github.com/jruels/modern-cloud-bootcamp.git
 ```
 
-In the `labs/01-arm-templates` directory you will find all the required files for this lab. 
+In the `labs/arm-templates` directory you will find all the required files for this lab. 
 
 1. In **Visual Studio Code**, go to **File** > **Preferences** > **Extensions** and in the search box type **Azure Resource Manager** tools install the  <a href="https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools" target="_blank"><span style="color: 0066cc">Azure Resource Manager Tools</span></a>
 ![](index/vsc_resmgtext.png)
@@ -33,7 +33,7 @@ In the `labs/01-arm-templates` directory you will find all the required files fo
 2. 
     Rather than creating a template from scratch we will use one of the <a href="https://azure.microsoft.com/en-us/resources/templates/" target="_blank"><span style="color: 0066cc">Azure Quickstart Templates</span></a>. We will use a template designed to Deploy a simple Windows  VM.
 
-3. Create a working directory to keep your templates in and copy `01/arm-templates/azuredeploy.json` to your new working directory. 
+3. Create a working directory to keep your templates in and copy `arm-templates/azuredeploy.json` to your new working directory. 
 
 4. Copy `<your_dir>/azuredeploy.json` to  `<your_dir>/storage/storage.json`
 
@@ -188,7 +188,7 @@ $projectNamePrefix = Read-Host -Prompt "Enter a project name (no spaces or speci
     $storageAccountName = $projectNamePrefix + "stracc"
     $containerName = "linktempblobcntr" # The name of the Blob container to be created.
     
-    $linkedTemplateURL = "https://raw.githubusercontent.com/jruels/modern-cloud-bootcamp/master/labs/01-arm-templates/.solutions/storage.json" # A completed linked template used in this lab.
+    $linkedTemplateURL = "https://raw.githubusercontent.com/jruels/modern-cloud-bootcamp/master/labs/arm-templates/.solutions/storage.json" # A completed linked template used in this lab.
     $fileName = "storage.json" # A file name used for downloading and uploading the linked template.
     
     # Download the lab linked template
