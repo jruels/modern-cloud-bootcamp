@@ -1,13 +1,13 @@
-# Lab2: VM Scale Sets
+# VM Scale Sets
 All tasks in this lab are performed from the Azure portal (including a PowerShell Cloud Shell session) except for Exercise 2 Task 2 and Exercise 2 Task 3, which include steps performed from a Remote Desktop session to an Azure VM
 
 Lab files: 
 
--  **02-vms/files/azuredeploy.json**
+-  **azure-vms/files/azuredeploy.json**
 
--  **02-vms/files/azuredeploy.parameters.json**
+-  **azure-vms/files/azuredeploy.parameters.json**
 
--  **02-vms/files/install_iis_vmss.zip**
+-  **azure-vms/files/install_iis_vmss.zip**
 
 ### Objectives
   
