@@ -52,7 +52,7 @@ You should now have two identital json files
 
 ### Task 2: Create a Linked template for storage resources
 
-The linked storage template we are creating, `storage.json` will create a storage account. The linked storage template needs to pass a value back to the main template, a`zuredeploy.json`, and this value is defined in the `outputs` element of the linked storage template.
+The linked storage template we are creating, `storage.json` will create a storage account. The linked storage template needs to pass a value back to the main template, `azuredeploy.json`, and this value is defined in the `outputs` element of the linked storage template.
 
 1. Open `storage.json` in your editor. Ensure it is the storage.json that is open and **not** the `azuredeploy.json`.
 
