@@ -22,7 +22,7 @@ The labs will be shown running in Visual Studio Code but you can always substitu
 
 Start by cloning the class repo: 
 ```
-git clone https://github.com/jruels/adv-azure-classpage.git
+git clone https://github.com/jruels/modern-cloud-bootcamp.git
 ```
 
 In the `labs/01-arm-templates` directory you will find all the required files for this lab. 
@@ -188,7 +188,7 @@ $projectNamePrefix = Read-Host -Prompt "Enter a project name (no spaces or speci
     $storageAccountName = $projectNamePrefix + "stracc"
     $containerName = "linktempblobcntr" # The name of the Blob container to be created.
     
-    $linkedTemplateURL = "https://raw.githubusercontent.com/jruels/adv-azure-classpage/master/labs/01-arm-templates/.solutions/storage.json" # A completed linked template used in this lab.
+    $linkedTemplateURL = "https://raw.githubusercontent.com/jruels/modern-cloud-bootcamp/master/labs/01-arm-templates/.solutions/storage.json" # A completed linked template used in this lab.
     $fileName = "storage.json" # A file name used for downloading and uploading the linked template.
     
     # Download the lab linked template
