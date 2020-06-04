@@ -1,4 +1,4 @@
-# Lab 4b: AAD Users
+# AAD Users
 Add new users or delete existing users from your Azure Active Directory (Azure AD) organization.
 
 ## Add a new user
