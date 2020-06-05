@@ -42,6 +42,7 @@ Lab 19: [Azure ARM template](labs/arm-templates)
 
 ### Day 5
 Lab 20: [Deploy HA VMs](labs/azure-vms)   
-Lab 21: [Manage AAD users](labs/aad-users/)   
-Lab 22: [Autoscale VMs (CPU)](labs/autoscale-vm/)   
-Lab 23: [Geographically Redundance VMs](labs/lb_tm/)   
+Lab 21: [Autoscale VMs (CPU)](labs/autoscale-vm/)   
+Lab 22: [Manage AAD users](labs/aad-users/)   
+Lab 23: [Deploy Web Apps](labs/webapp/)   
+Lab 24: [Geographically Redundant VMs](labs/lb_tm/)   
