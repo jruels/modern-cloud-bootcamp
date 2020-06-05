@@ -208,7 +208,7 @@ New-AzVM -ResourceGroupName $resourceGroup.ResourceGroupName -Location $location
 
 4. On the **Custom deployment** blade, click the **Build your own template in the editor** link. If you do not see this link, click **Edit template** instead.
 
-5. From the **Edit template** blade, load the template file **02-vms/files/azuredeploy.json**. 
+5. From the **Edit template** blade, load the template file **azure-vms/files/azuredeploy.json**. 
 
 > **Note**: Review the content of the template and note that it defines deployment of two Azure VMs hosting Linux Ubuntu into an availability set and into the existing virtual network **azscaleset-vnet0**. This virtual network does not exist in your deployment. You will be changing the virtual network name in the parameters below.  
 
@@ -216,7 +216,7 @@ New-AzVM -ResourceGroupName $resourceGroup.ResourceGroupName -Location $location
 
 7. From the **Custom deployment** blade, navigate to the **Edit parameters** blade.
 
-8. From the **Edit parameters** blade, load the parameters file **02-vms/files/azuredeploy.parameters.json**. 
+8. From the **Edit parameters** blade, load the parameters file **azure-vms/files/azuredeploy.parameters.json**. 
 
 9. Save the parameters and return to the **Custom deployment** blade. 
 
@@ -476,7 +476,7 @@ Test-AzDnsAvailability -DomainNameLabel <custom-label> -Location $location
 
 1. From the **azscalesetvmss0 - Extension** blade, add the **PowerShell Desired State Configuration** extension with the following settings:
 
-> **Note**: The DSC configuration module is available for upload from **02-vms/files/install_iis_vmss.zip**. The module contains the DSC configuration script that installs the Web Server (IIS) role.  
+> **Note**: The DSC configuration module is available for upload from **azure-vms/files/install_iis_vmss.zip**. The module contains the DSC configuration script that installs the Web Server (IIS) role.  
 
 - Configuration Modules or Script: **"install_iis_vmss.zip"**  
 
