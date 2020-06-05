@@ -8,6 +8,7 @@ This site includes the slides and labs for the Modern Application Bootcamp class
 [Slides day 2](https://www.dropbox.com/s/b18zu9wtu4tzkfm/Cloud%20Bootcamp-Day2.pdf?dl=0)   
 [Slides day 3](https://www.dropbox.com/s/pcfbw5zc8n3cc1p/Cloud%20Bootcamp-Day3.pdf?dl=0)   
 [Slides day 4](https://www.dropbox.com/s/r594l7hltdv1umq/Cloud%20Bootcamp-Day4.pdf?dl=0)   
+[Slides day 5](https://www.dropbox.com/s/eqv315ihhgs0vtp/Cloud%20Bootcamp-Day5.pdf?dl=0)   
 
 ## Labs   
 
@@ -43,4 +44,4 @@ Lab 19: [Azure ARM template](labs/arm-templates)
 Lab 20: [Deploy HA VMs](labs/azure-vms)   
 Lab 21: [Manage AAD users](labs/aad-users/)   
 Lab 22: [Autoscale VMs (CPU)](labs/autoscale-vm/)   
-Lab 23: [Geographically Redundance Deployment](labs/lb_tm/)   
+Lab 23: [Geographically Redundance VMs](labs/lb_tm/)   
