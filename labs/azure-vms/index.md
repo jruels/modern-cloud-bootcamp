@@ -1,5 +1,4 @@
 # VM Scale Sets
-All tasks in this lab are performed from the Azure portal (including a PowerShell Cloud Shell session) except for Exercise 2 Task 2 and Exercise 2 Task 3, which include steps performed from a Remote Desktop session to an Azure VM
 
 Lab files: 
 
@@ -20,7 +19,7 @@ After completing this lab, you will be able to:
 -  Deploy and configure Azure VM scale sets
 
 
-### Exercise 1: Deploy Azure VMs by using the Azure portal, Azure PowerShell, and Azure Resource Manager templates
+### Deploy Azure VMs by using the Azure portal, Azure PowerShell, and Azure Resource Manager templates
   
 The main tasks for this exercise are as follows:
 
@@ -31,7 +30,7 @@ The main tasks for this exercise are as follows:
 1. Deploy two Azure VMs running Linux into an availability set by using an Azure Resource Manager template
 
 
-#### Task 1: Deploy an Azure VM running Windows Server 2016 Datacenter into an availability set by using the Azure portal
+#### Deploy an Azure VM running Windows Server 2016 Datacenter into an availability set by using the Azure portal
 
 1. In the Azure portal, navigate to the **Create a resource** blade.
 
@@ -101,7 +100,7 @@ The main tasks for this exercise are as follows:
 > **Note**: Wait for the deployment to complete before you proceed to the next task. This should take about 5 minutes.  
 
 
-#### Task 2: Deploy an Azure VM running Windows Server 2016 Datacenter into the existing availability set by using Azure PowerShell
+#### Deploy an Azure VM running Windows Server 2016 Datacenter into the existing availability set by using Azure PowerShell
 
 1. From the Azure Portal, start a PowerShell session in the Cloud Shell pane. 
 
@@ -199,7 +198,7 @@ New-AzVM -ResourceGroupName $resourceGroup.ResourceGroupName -Location $location
 > **Note**: Do not wait for the deployment to complete but instead proceed to the next task.  
 
 
-#### Task 3: Deploy two Azure VMs running Linux into an availability set by using an Azure Resource Manager template
+#### Deploy two Azure VMs running Linux into an availability set by using an Azure Resource Manager template
 
 1. In the Azure portal, navigate to the **Create a resource** blade.
 
@@ -256,7 +255,7 @@ New-AzVM -ResourceGroupName $resourceGroup.ResourceGroupName -Location $location
 > **Note**: You could certainly use a template to deploy two Azure VMs hosting Windows Server 2016 datacenter in a single task (just as this was done with two Azure VMs hosting Linux Ubuntu server). The reason for deploying these Azure VMs in two separate tasks was to give you the opportunity to become familiar with both the Azure portal and Azure PowerShell-based deployments.  
 
 
-### Exercise 2: Configure networking settings of Azure VMs running Windows and Linux operating systems
+### Configure networking settings of Azure VMs running Windows and Linux operating systems
   
 The main tasks for this exercise are as follows:
 
@@ -267,7 +266,7 @@ The main tasks for this exercise are as follows:
 3. Connect to an Azure VM running Linux Ubuntu Server via a private IP address
 
 
-#### Task 1: Configure static private and public IP addresses of Azure VMs
+#### Configure static private and public IP addresses of Azure VMs
 
 1. In the Azure portal, navigate to the **azscaleset-vm0** blade.
 
@@ -296,7 +295,7 @@ The main tasks for this exercise are as follows:
 > **Note**: It is possible to connect to Azure VMs via either statically or dynamically assigned public and private IP addresses. Choosing static IP assignment is commonly done in scenarios where these IP addresses are used in combination with IP filtering, routing, or if they are assigned to network interfaces of Azure VMs that function as DNS servers.  
 
 
-#### Task 2: Connect to an Azure VM running Windows Server 2016 Datacenter via a public IP address
+#### Connect to an Azure VM running Windows Server 2016 Datacenter via a public IP address
 
 1. In the Azure portal, navigate to the **azscaleset-vm0** blade.
 
@@ -335,7 +334,7 @@ The main tasks for this exercise are as follows:
 * Password: **Pa55w.rd1234**
 
 
-#### Task 3: Connect to an Azure VM running Linux Ubuntu Server via a private IP address
+#### Connect to an Azure VM running Linux Ubuntu Server via a private IP address
  
 1. Within the RDP session to **azscaleset-vm0**, start **Command Prompt**.
 
@@ -376,7 +375,7 @@ The main tasks for this exercise are as follows:
 > **Result**: After you completed this exercise, you have configured static private and public IP addresses of Azure VMs, connected to an Azure VM running Windows Server 2016 Datacenter via a public IP address, and connect to an Azure VM running Linux Ubuntu Server via a private IP address  
 
 
-### Exercise 3: Deploy and configure Azure VM scale sets
+### Deploy and configure Azure VM scale sets
 
 The main tasks for this exercise are as follows:
 
@@ -387,7 +386,7 @@ The main tasks for this exercise are as follows:
 3. Install IIS on a scale set VM by using DSC extensions
 
 
-#### Task 1: Identify an available DNS name for an Azure VM scale set deployment
+#### Identify an available DNS name for an Azure VM scale set deployment
 
 1. From the Azure Portal, start a PowerShell session in the Cloud Shell pane. 
 
@@ -404,7 +403,7 @@ Test-AzDnsAvailability -DomainNameLabel <custom-label> -Location $location
 4. Note the value of the &lt;custom-label&gt; that resulted in the successful outcome. You will need it in the next task
 
 
-#### Task 2: Deploy an Azure VM scale set
+#### Deploy an Azure VM scale set
 
 1. In the Azure portal, navigate to the **Create a resource** blade.
 
@@ -469,7 +468,7 @@ Test-AzDnsAvailability -DomainNameLabel <custom-label> -Location $location
 > **Note**: Wait for the deployment to complete before you proceed to the next task. This should take about 5 minutes.  
 
 
-#### Task 3: Install IIS on a scale set VM by using DSC extensions
+#### Install IIS on a scale set VM by using DSC extensions
 
 1. In the Azure portal, navigate to the **azscalesetvmss0** blade.
 
@@ -509,9 +508,9 @@ Test-AzDnsAvailability -DomainNameLabel <custom-label> -Location $location
 
 > **Result**: After you completed this exercise, you have identified an available DNS name for an Azure VM scale set deployment, deployed an Azure VM scale set, and installed IIS on a scale set VM by using the DSC extension.  
 
-## Exercise 4: Remove lab resources
+## Remove lab resources
 
-#### Task 1: Open Cloud Shell
+#### Open Cloud Shell
 
 1. At the top of the portal, click the **Cloud Shell** icon to open the Cloud Shell pane.
 
@@ -525,7 +524,7 @@ az group list --query "[?contains(name,'scale')].name" --output tsv
 
 4. Verify that the output contains only the resource groups you created in this lab. These groups will be deleted in the next task.
 
-#### Task 2: Delete resource groups
+#### Delete resource groups
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to delete the resource groups you created in this lab
 
