@@ -38,5 +38,9 @@ Lab 16: [CICD Pipeline](labs/cicd-aks)
 Lab 17: [Azure Networking](labs/azure-vnet)   
 Lab 18: [Azure Compute](labs/azure-compute)   
 Lab 19: [Azure ARM template](labs/arm-templates)   
+
+### Day 5
 Lab 20: [Deploy HA VMs](labs/azure-vms)   
 Lab 21: [Manage AAD users](labs/aad-users/)   
+Lab 22: [Autoscale VMs (CPU)](labs/autoscale-vm/)   
+Lab 23: [Geographically Redundance Deployment](labs/lb_tm/)   
