@@ -82,5 +82,5 @@ Now create a pipeline view.
 * Go trigger a **Run** from the pipeline view and see what happens. Make sure you have selected "ENABLE AUTO REFRESH" earlier from the top right corner of the screen.
 
 ----
-:point_left:[**Prev** Chapter 5: Adding Build Triggers ](050_add_build_triggers.md)
+[**Prev** Chapter 5: Adding Build Triggers ](050_add_build_triggers.md)
 

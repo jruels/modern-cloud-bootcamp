@@ -36,6 +36,6 @@ When you login to jenkins for the first time, following is the screen you would 
 
 
   ----
-  :point_left:[**Prev** Chapter 2: Install Jenkins](020_install_jenkins.md)
+  [**Prev** Chapter 2: Install Jenkins](020_install_jenkins.md)
 
-  :point_right: [**Next** Chapter 4: Creating First Project with Jenkins](040_creating_first_job.md)
+  [**Next** Chapter 4: Creating First Project with Jenkins](040_creating_first_job.md)

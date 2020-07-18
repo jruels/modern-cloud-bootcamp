@@ -62,4 +62,4 @@ Now we have successfully installed Jenkins and we can proceed with configuration
 
 -----
 
-:point_right: [**Next** Chapter 3: Configure Jenkins](030_configure_jenkins.md)
+[**Next** Chapter 3: Configure Jenkins](030_configure_jenkins.md)
